@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="260dp"
+        android:textColor="#fff"
+        />
+
+    <AnalogClock
+        android:id="@+id/simpleAnalogClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:padding="50dp"/>
+        <!-- id is used to uniquely define analog clock -->
+
+    <DigitalClock
+        android:id="@+id/simpleDigitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Alarm"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="World Clock"
+        android:layout_marginTop="410dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Timer"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Stopwatch"
+        android:layout_marginTop="530dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="22dp"
+        android:textColor="#000"/>
+
+</RelativeLayout>

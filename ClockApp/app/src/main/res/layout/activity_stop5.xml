@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarmActivity2"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopwatch"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="50dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F5FA55" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="26dp"
+        android:id="@+id/btnStart" />
+
+    <Button
+        android:text="Pause"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnPause"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnReset"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="270dp"/>
+
+    <Button
+        android:text="Save Lap"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:id="@+id/btnSaveLap"
+        android:layout_below="@+id/btnStart"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnSaveLap"
+        android:divider="#8190b3"
+        android:dividerHeight="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/listView1"
+        android:cacheColorHint="#fff"/>
+
+</RelativeLayout>
+

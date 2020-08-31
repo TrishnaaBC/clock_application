@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarmActivity2"
+    android:background="#000"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="World Clock"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Time"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/txtCurrentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:textColor="#fff"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textColor="#fff"
+        android:background="#C0C0C0"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/timezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Time"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="22dp"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/txtTimeZoneTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:textColor="#fff"/>
+</LinearLayout>
+

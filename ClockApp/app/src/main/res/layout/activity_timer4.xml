@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarmActivity2"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/txt_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_input"
+        android:layout_above="@id/txt_countdown"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter minutes"
+        android:textColorHint="@color/bluishGrey"
+        android:textColor="#fff"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_btn"
+        android:layout_alignTop="@+id/edit_text_input"
+        android:layout_toEndOf="@id/edit_text_input"
+        android:text="set"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/edit_text_input" />
+
+    <TextView
+        android:id="@+id/txt_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@color/colorYellow"
+        android:textSize="60dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:text="Start"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_countdown"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/start_pause_btn" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/reset_btn"
+        android:layout_below="@+id/start_pause_btn"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        tools:visibility="visible"/>
+
+
+</RelativeLayout>
